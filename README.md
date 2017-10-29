@@ -18,7 +18,7 @@ After knitting the presentation, the slides can be printed to PDF using [decktap
 docker run --rm -v `pwd`:/slides -v `pwd`:/home/user astefanutti/decktape file:///home/user/SerenityNow.html SerenityNow.pdf
 ```
 
-*Note that, as of this edit (10/29/2017), the README at `astefanutti/decktape` on GitHub gives the incorrect Docker command.  See [Issue #108](https://github.com/astefanutti/decktape/issues/108).*
+*Note that, as of this edit (10/29/2017), the README at [astefanutti/decktape](https://github.com/astefanutti/decktape) on GitHub gives the incorrect Docker command.  See [Issue #108](https://github.com/astefanutti/decktape/issues/108).*
 
 ## Acknowledgements
 
