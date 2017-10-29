@@ -10,6 +10,16 @@ This respository consists of the presentation slides for a talk given at [The 12
 
 Follow Serenity development at <a href="https://github.com/serenity-r">https://github.com/serenity-r</a>
 
+## Printing slides
+
+After knitting the presentation, the slides can be printed to PDF using [decktape.js](https://github.com/astefanutti/decktape).  The following Docker command works (assuming the current directory is where the resulting `Serenity.html` file is located):
+
+```bash
+docker run --rm -v `pwd`:/slides -v `pwd`:/home/user astefanutti/decktape file:///home/user/SerenityNow.html SerenityNow.pdf
+```
+
+## Acknowledgements
+
 Slides created via the R package <a href="https://github.com/yihui/xaringan">xaringan</a>.
 
 ###### <img src="www/img/nsf-logo.jpg" height="50px" align="left">This material is based upon work supported by the National Science Foundation under DBI 1346584, DUE 1446269, DUE 1446258, and DUE 1446284.  Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
