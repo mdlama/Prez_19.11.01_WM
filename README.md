@@ -1,10 +1,11 @@
-# Building a Gateway Between Classrooms and Data Science Using QUBESHub
-### by M. Drew LaMar and Sam Donovan
+# Serenity now!  Keep calm and do science with real data in the classroom
+### by M. Drew LaMar, Sam Donovan and Hayley Orndorf
 
 <img src="www/img/SerenityBridge.svg" height="300px">
 
-This respository consists of the presentation slides for a talk given at [The 12th Gateway Computing Environments Conference](https://sciencegateways.org/web/gateways2017), October 23-25, 2017.
+This respository consists of the presentation slides for a workshop session given at [Wicked Problems: Investigating real world problems in the biology classroom (SW 2018)](https://qubeshub.org/community/groups/summer2018/overview), June 19, 2018.
 
+More about Serenity:
 * **Conference Proceeding**: LaMar, M. Drew; Donovan, Sam (2017): *Building a Gateway Between Classrooms and Data Science Using QUBESHub*. [doi:10.6084/m9.figshare.5483692](https://doi.org/10.6084/m9.figshare.5483692)
 * [Slideshow](https://mdlama.github.io/Prez_17.10.25_Gateways)
 

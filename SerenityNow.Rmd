@@ -1,8 +1,8 @@
 ---
-title: "Building a gateway between classrooms and data science using QUBESHub"
-subtitle: "12th Gateway Computing Environments Conference"
-author: "M. Drew LaMar and Sam Donovan"
-date: "2017/10/25"
+title: "Serenity now!  Keep calm and do science with real data in the classroom"
+subtitle: ""
+author: "M. Drew LaMar, Sam Donovan and Hayley Orndorf"
+date: "Tuesday, June 19, 2018, 2:00 pm"
 output:
   xaringan::moon_reader:
     css: www/css/default.css
@@ -27,68 +27,57 @@ Used for QUBES logo.  Layout true for this slide then false for the next is nece
 
 layout: false
 
-# Gateway challenges
-
-### Core challenges
-* **Audience (_faculty and students_)**:  Gateway must address two different audiences.
---
-
-* **Context (_research and education_)**:  Faculty themselves have very different needs.
---
-
-* **Content (_faculty training_)**:  Faculty need training not only in computational tools and quantitative/statistical concepts (which are underdeveloped in undergraduate curricula), but also in the pedagogical strategies in bringing these to the classroom.
---
-
-
-### Cultural challenges
---
-
-* **Isolation**:  Difficult for faculty to share teaching materials and strategies, due to fear of public scrutiny.
---
-
-* **Recognition**:  Recognition of teaching scholarship in hiring, promotion and tenure is underdeveloped and widely variable.
---
-
-* **Adoption**:  Adopting existing teaching materials from repositories is challenging as modifications are almost always necessary.
-
----
-
-# Educational Gateway
-## .subheader[QUBES: Quantitative Undergraduate Biology Education and Synthesis]
+# Discussion: Usability vs. Flexibility
 
 <br \>
-![](www/img/qubes_logo_web_200x60.png)
-
-<blockquote>
-QUBES is a community of math and biology educators who share resources and methods for preparing students to use quantitative approaches to tackle real, complex, biological problems.
-</blockquote>
-
----
-
-# QUBES: Quantitative Undergraduate Biology Education and Synthesis
-
 .center[
-<img src="www/img/QUBESDiagram.gif" width="500px">
+<img src="www/img/dims_of_design_principles.png" height=450px>
 ]
 
-.footnote[
-<img src="www/img/qubes_logo_web_200x60.png"><br \>
-]
-
-.right[
-https://qubeshub.org
-]
-
-???
-
-What is QUBES?
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
 
 ---
 
-# Data Science challenges (in Biology)
+# Discussion: Usability vs. Flexibility
 
- * **Faculty training**: Biology faculty are not domain experts in statistics and data analysis
---
+<br \>
+.center[
+<img src="www/img/dims_of_design_principles_with_serenity.png" height=450px>
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
+# Discussion
+## .subheader[
+What types of **data literacy** do you want your students to gain competency in?
+]
+
+.pull-left[
+<br \>
+<img src="www/img/date_one_life_cycle.png" height="300px">
+]
+
+.pull-right[
+<br \>
+* **Plan**: Design for data collection
+* **Collect**: Collect data
+* **Assure**: Check & inspect
+* **Describe**: Assign metadata
+* **Preserve**: Long-term archiving
+* **Discover**: Find relevant data 
+* **Integrate**: Combine data sets
+* **Analyze**: Explore data
+]
+
+.credit[Image from [DataONE](https://www.dataone.org/data-life-cycle)]
+
+---
+
+# Data Science pedagogical challenges
 
  * **Messy data**: Many opportunities in using real data, but *real data is messy*
 --
@@ -110,39 +99,6 @@ What is QUBES?
 --
 
    * **Scripting/Programming**: Reproducibility is becoming more important in science.
-
----
-
-background-image: url(www/img/thecarpentries.jpg)
-background-size: contain
-
-# Faculty Training Solutions
-## .subheader[
-The Carpentries
-]
-
-.credit[Image credit: http://cgrb.oregonstate.edu/service-spotlight/software-carpentry]
-
----
-
-# Faculty Training Solutions
-## .subheader[
-QUBES Faculty Mentoring Networks
-]
-
-.pull-left[
-### Faculty Mentoring Networks are:
-* Online groups, typically 10-15 faculty members
-* Focused on a specific topic or material
-* Typically meet every two weeks over a period of several months
-* Led by teams of expert content and pedagogy mentors
-]
-
---
-
-.pull-right[
-<img src="www/img/FMN.png" width="350px">
-]
 
 ---
 
