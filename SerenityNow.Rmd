@@ -27,30 +27,6 @@ Used for QUBES logo.  Layout true for this slide then false for the next is nece
 
 layout: false
 
-# Discussion: Usability vs. Flexibility
-
-<br \>
-.center[
-<img src="www/img/dims_of_design_principles.png" height=450px>
-]
-
-.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
-for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
-
----
-
-# Discussion: Usability vs. Flexibility
-
-<br \>
-.center[
-<img src="www/img/dims_of_design_principles_with_serenity.png" height=450px>
-]
-
-.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
-for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
-
----
-
 # Discussion
 ## .subheader[
 What types of **data literacy** do you want your students to gain competency in?
@@ -77,7 +53,46 @@ What types of **data literacy** do you want your students to gain competency in?
 
 ---
 
+# Discussion: Usability vs. Flexibility
+
+<br \>
+.center[
+<img src="www/img/dims_of_design_principles.png" height=450px>
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
+# Discussion: Usability vs. Flexibility
+## .subheader[
+Where do you feel like you fall in this space in the context of teaching?
+]
+.center[
+<img src="www/img/dims_of_design_principles.png" height=400px>
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
+# Discussion: Usability vs. Flexibility
+
+<br \>
+.center[
+<img src="www/img/dims_of_design_principles_with_serenity.png" height=450px>
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
 # Data Science pedagogical challenges
+
+--
 
  * **Messy data**: Many opportunities in using real data, but *real data is messy*
 --
@@ -403,16 +418,26 @@ class: center
 # Thank you!
 
 ### QUBES Leadership Team
+.pull-left[
 Kristin Jenkins<br \>
 Carrie Diaz-Eaton<br \>
 Jeremy Wojdak<br \>
-Alison Hale<br \>
 Gaby Hamerlinck<br \>
+Deb Rook<br \>
+Pam Bishop<br \>
+]
+.pull-right[
 Arietta Fleming-Davies<br \>
+Nicole Chodkowski<br \>
+Elia Crisucci<br \>
+Jenny Kwan<br \>
+Sondra LoRe<br \>
+Kevin Kidder<br \>
+]
+
 
 ### Inspired by Radiant
 Vincent Nijs<br \>
-<img src="www/img/sgci-new-logo-words-below-black.png" height="100px" style="float: left; margin-left: -50px; margin-top: -80px">
 <img src="www/img/nsf-logo.jpg" height="100px" style="float: right; margin-right: -50px; margin-top: -80px">
 
 .left[
