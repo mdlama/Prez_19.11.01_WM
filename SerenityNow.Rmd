@@ -1,8 +1,8 @@
 ---
 title: "Serenity now!  Keep calm and do science with real data in the classroom"
 subtitle: ""
-author: "M. Drew LaMar, Sam Donovan and Hayley Orndorf"
-date: "Tuesday, June 19, 2018, 2:00 pm"
+author: "M. Drew LaMar"
+date: "Friday, November 1, 2019, 4:00 pm"
 output:
   xaringan::moon_reader:
     css: www/css/default.css
@@ -190,7 +190,7 @@ name: serenity
 Data science in the classroom
 ]
 
-.thumbnail-top-right[![](www/img/SerenityR.png)]
+.thumbnail-top-right[![](www/img/serenity_final.svg)]
 
 .center[
 .middle[
@@ -385,7 +385,7 @@ template: serenity
 Data science in the classroom
 ]
 
-.thumbnail-top-right[![](www/img/SerenityR.png)]
+.thumbnail-top-right[![](www/img/serenity_final.svg)]
 
 
 1. Highly-accessible as a free, open-source web application
@@ -413,28 +413,16 @@ Data science in the classroom
 class: center
 
 .thumbnail-top-left[![](www/img/qubes_logo_web_200x200_transp.png)]
-.thumbnail-top-right[![](www/img/SerenityR.png)]
+.thumbnail-top-right[![](www/img/serenity_final.svg)]
 
 # Thank you!
 
-### QUBES Leadership Team
-.pull-left[
-Kristin Jenkins<br \>
-Carrie Diaz-Eaton<br \>
-Jeremy Wojdak<br \>
-Gaby Hamerlinck<br \>
-Deb Rook<br \>
-Pam Bishop<br \>
-]
-.pull-right[
-Arietta Fleming-Davies<br \>
-Nicole Chodkowski<br \>
-Elia Crisucci<br \>
-Jenny Kwan<br \>
-Sondra LoRe<br \>
-Kevin Kidder<br \>
-]
-
+### Undergraduate Students
+Michael James (*Data Importer*)<br \>
+Natalie Larsen (*Data Dashboarder*)<br \>
+Meg Anderson (*Data Viz Linker*)<br \>
+Sarah Jo McGeady<br \>
+Keely Copperthite (*Data Viz Linker*)<br \>
 
 ### Inspired by Radiant
 Vincent Nijs<br \>
