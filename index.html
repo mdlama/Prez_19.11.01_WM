@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Serenity Now! Creating a bridge to coding and data skills in the undergraduate biology classroom</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="M. Drew LaMar" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet/leaflet.js"></script>
+    <link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+    <script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="libs/leaflet-binding/leaflet.js"></script>
+    <link href="libs/leaflet-easybutton/easy-button.css" rel="stylesheet" />
+    <script src="libs/leaflet-easybutton/easy-button.js"></script>
+    <script src="libs/leaflet-easybutton/EasyButton-binding.js"></script>
+    <link href="libs/leaflet-locationfilter2/locationfilter.css" rel="stylesheet" />
+    <script src="libs/leaflet-locationfilter2/locationfilter.js"></script>
+    <script src="libs/leaflet-locationfilter2/locationfilter-bindings.js"></script>
+    <link href="libs/ionicons/ionicons.min.css" rel="stylesheet" />
+    <link href="libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <script src="libs/d3/d3.min.js"></script>
+    <link href="libs/d3scatter/d3scatter.css" rel="stylesheet" />
+    <script src="libs/d3scatter/d3scatter.js"></script>
+    <script src="libs/d3scatter-binding/d3scatter.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="www/css/default.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Serenity Now! Creating a bridge to coding and data skills in the undergraduate biology classroom
+### M. Drew LaMar
+### Friday, November 1, 2019, 4:00 pm
+
+---
+
+
+name: qubes
+layout: true
+
+.thumbnail-top-right[![](www/img/qubes_logo_web_200x200_transp.png)]
+
+&lt;!--
+Used for QUBES logo.  Layout true for this slide then false for the next is necessary to be able to use this as a template in the future, but have it not show.
+--&gt;
+
+---
+
+layout: false
+
+# Discussion
+## .subheader[
+What types of **data literacy** do you want your students to gain competency in?
+]
+
+.pull-left[
+&lt;br \&gt;
+&lt;img src="www/img/date_one_life_cycle.png" height="300px"&gt;
+]
+
+.pull-right[
+&lt;br \&gt;
+* **Plan**: Design for data collection
+* **Collect**: Collect data
+* **Assure**: Check &amp; inspect
+* **Describe**: Assign metadata
+* **Preserve**: Long-term archiving
+* **Discover**: Find relevant data 
+* **Integrate**: Combine data sets
+* **Analyze**: Explore data
+]
+
+.credit[Image from [DataONE](https://www.dataone.org/data-life-cycle)]
+
+---
+
+# Discussion: Usability vs. Flexibility
+
+&lt;br \&gt;
+.center[
+&lt;img src="www/img/dims_of_design_principles.png" height=450px&gt;
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
+# Discussion: Usability vs. Flexibility
+## .subheader[
+Where do you feel like you fall in this space in the context of teaching?
+]
+.center[
+&lt;img src="www/img/dims_of_design_principles.png" height=400px&gt;
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
+# Discussion: Usability vs. Flexibility
+
+&lt;br \&gt;
+.center[
+&lt;img src="www/img/dims_of_design_principles_with_serenity.png" height=450px&gt;
+]
+
+.credit[Image credit: ["DataBasic: Design Principles, Tools and Activities
+for Data Literacy Learners"](http://ci-journal.org/index.php/ciej/article/view/1294) by Catherine D’Ignazio and Rahul Bhargava]
+
+---
+
+# Data Science pedagogical challenges
+
+--
+
+ * **Messy data**: Many opportunities in using real data, but *real data is messy*
+--
+
+ * **Complex software**: Many opportunities in using research tools, but *software is complex*
+--
+
+ * **Accessibility**:
+   * Lack of user-friendly *open-source* software
+--
+
+   * Computers in labs might require substantial setup prior to use of software
+--
+
+   * Student laptops are highly variable in computational ability, setup and maintenance
+--
+
+ * **Cognitive overload**: Biology students need to learn biology, math, physics, chemistry, statistics, experimental design, data skills, etc.
+--
+
+   * **Scripting/Programming**: Reproducibility is becoming more important in science.
+
+---
+
+# Accessibility Solutions
+## .subheader[
+Software "in the cloud"
+]
+
+&lt;br \&gt;
+.center[
+&lt;img src="www/img/cloudcomputing.jpg" height=400px&gt;
+]
+
+.credit[Image credit: http://insights.speakwithageek.com/post/Top-Benefits-of-Cloud-Computing-in-Education]
+
+---
+
+# Accessibility Solutions
+
+## .subheader[
+Jupyter and R Notebooks
+]
+
+&lt;br \&gt;
+&lt;br \&gt;
+.center[
+&lt;img src="www/img/jupyter_logo.png" height=225px&gt;
+&lt;img src="www/img/nbWorkings.png" height=225px&gt;
+]
+
+.footnote[
+[http://jupyter.org/](http://jupyter.org/)&lt;br \&gt;
+[Why I love R Notebooks](https://www.r-bloggers.com/why-i-love-r-notebooks-2/)
+]
+
+---
+class: center, middle, inverse
+
+# The Bridge
+
+### How can we get student’s manipulating and analyzing data as fast as possible (i.e. *doing science*), while at the same time creating a scaffold to scripting skills?
+
+---
+class: center, middle, inverse
+
+# The Bridge
+
+### How can we focus students' attention on meaningful disciplinary work while reducing the technical overhead to do that work?
+
+---
+
+
+
+background-image: url(www/img/e778_firefly_serenity_cutaway_poster_set_2.jpg)
+background-size: contain
+
+.credit[Image credit: http://www.thinkgeek.com/images/products/additional/large/e778_firefly_serenity_cutaway_poster_set_2.jpg]
+---
+
+class: center, middle
+
+# Serenity: Data Science in the Classroom
+
+&lt;img src="www/img/SerenityBridge.svg" width="400px"&gt;
+
+---
+
+name: serenity
+
+# Serenity
+## .subheader[
+Data science in the classroom
+]
+
+.thumbnail-top-right[![](www/img/serenity_final.svg)]
+
+.center[
+.middle[
+{{content}}
+]
+]
+
+---
+
+template: serenity
+
+### 1. Highly-accessible as a free, open-source web application
+
+&lt;br \&gt;
+&lt;img src="www/img/SerenityGithub.png" width="600px"&gt;
+
+### https://github.com/serenity-r
+
+---
+
+template: serenity
+
+### 2. Design keeps the focus on the data and the data life cycle
+
+&lt;br \&gt;
+&lt;img src="www/img/data-science.png" height="200px"&gt;
+&lt;br \&gt;
+
+--
+
+### .center[NJASP: Not Just Another Statistics Package]
+
+.credit[Image from [R for Data Science](http://r4ds.had.co.nz/), by Garrett Grolemund and Hadley Wickham]
+
+---
+
+template: serenity
+
+### 3. Streamlined communication and reporting with R Markdown
+
+&lt;br \&gt;
+&lt;img src="www/img/RMarkdownOutputFormats.png" height="300px"&gt;
+
+&lt;div class="credit"&gt;
+Image credit: &lt;a href="http://rmarkdown.rstudio.com/authoring_quick_tour.html#output_formats"&gt;http://rmarkdown.rstudio.com/authoring_quick_tour.html#output_formats&lt;/a&gt;
+&lt;/div&gt;
+
+---
+
+template: serenity
+
+### 4. Reports will include workflows that can be reproduced or repurposed
+
+&lt;br \&gt;
+&lt;img src="www/img/hello-shiny.png" height="200px"&gt;
+`\(\longrightarrow\)`
+&lt;img src="www/img/hasklig.png" height="200px"&gt;
+&lt;br \&gt;
+
+--
+
+### .center[GUI -&gt; Code]
+
+.credit[Image credit (left): http://rstudio.github.io/shiny/tutorial/#hello-shiny&lt;br \&gt;Image credit (right): https://benjaminlmoore.wordpress.com/]
+---
+
+template: serenity
+
+### 5. Workflows will follow best practices in data science
+
+&lt;br \&gt;
+&lt;img src="www/img/TeachTheTidyverse.png" height="300px"&gt;
+
+&lt;div class="credit"&gt;
+&lt;a href="http://varianceexplained.org/r/teach-tidyverse/"&gt;Teach the tidyverse to beginners&lt;/a&gt;, by David Robinson
+&lt;/div&gt;
+---
+
+template: serenity
+
+### 5. Workflows will follow best practices in data science
+
+&lt;br \&gt;
+&lt;img src="www/img/rstudio-hexed.jpeg" height="300px"&gt;
+
+&lt;div class="credit"&gt;
+Image credit: &lt;a href="https://www.rstudio.com/about/gear/"&gt;https://www.rstudio.com/about/gear/&lt;/a&gt;
+&lt;/div&gt;
+
+---
+
+template: serenity
+
+### 5. Workflows will follow best practices in data science
+
+&lt;br \&gt;
+&lt;img src="www/img/tidyverse1.png" height="300px"&gt;
+
+&lt;div class="credit"&gt;
+Image credit: &lt;a href="https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/"&gt;https://rviews.rstudio.com/2017/06/08/what-is-the-tidyverse/&lt;/a&gt;
+&lt;/div&gt;
+
+---
+template: serenity
+
+### 6. Simultaneous exploration of multiple representations of data
+
+&lt;br \&gt;
+<div class="container-fluid crosstalk-bscols">
+<div class="fluid-row">
+<div class="col-xs-6">
+<div id="htmlwidget-bc16fbaae242fac393cf" style="width:100%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bc16fbaae242fac393cf">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addSelect","args":["SharedDatacd60c7b2"]},{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-30.1,-23.61,-23.65,-19.7,-24.97,-17.94,-16.65,-17.91,-20.57,-20.24,-17.63,-20.36,-12.28,-17.9,-19.85,-16.04,-10.72,-18.18,-25.42,-21.24,-15.79,-25.25,-26.11,-18.8,-17.86,-21.55,-17.66,-28.1,-21.5,-30.64,-17.64,-20.09,-16.51,-21.91,-20.83,-18.77,-22.2,-15.65,-18.89,-30.01,-32.6,-25.04,-20.72,-19.4,-21.26,-11.77,-20.12,-17.78,-21.35,-20.83,-19.18,-22.04,-27.64,-30.28,-21.75,-13.65,-20.16,-18.73,-17.82,-12.05,-18.04,-22.42,-18.84,-20.45,-26.1,-24.41,-25.46,-21.6,-15.75,-17.99,-20.97,-12.01,-18.91,-22.7,-25.68,-25.2,-21.96,-13.4,-32.45,-21.77,-18.11,-20.68,-20.06,-18.12,-24.6,-32.42,-20.16,-18.21,-20.65,-20.54,-23.54,-19.66,-24.57,-17.7,-22.58,-15.18,-20.37,-19.02,-23.28,-17.6],[182.3,180.23,184.46,186.2,182.85,181.49,185.51,181.48,181.33,169.49,185.13,186.16,167.06,181.3,184.51,183.54,165.99,180.63,182.65,180.86,166.83,179.86,178.3,169.21,181.3,181.39,181.4,183.5,185.2,181.2,181.28,168.75,187.1,181.28,185.9,169.24,180.58,186.26,181.24,181.15,180.9,179.84,181.41,180.94,181.69,166.32,183.4,181.53,170.04,181.01,169.33,184.91,182.22,180.62,180.67,166.66,181.99,168.8,181.27,167.39,181.84,171.4,184.16,181.85,182.3,180.03,179.98,180.5,185.23,181.57,181.47,166.29,169.46,170.3,180.34,182.6,180.54,166.9,181.15,181,181.63,181.41,168.69,181.71,183.5,181.21,184.27,180.87,182.22,181.66,180.04,180.28,179.92,181.31,179.24,185.93,182.1,184.23,184.61,181.5],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},{"ctKey":["46","409","557","420","676","26","245","722","582","108","931","391","997","485","768","494","389","460","843","604","532","628","114","365","989","850","39","978","415","299","38","587","501","878","475","318","898","615","687","859","425","810","645","231","730","48","84","616","888","941","258","617","925","209","819","226","274","268","900","638","751","721","140","185","326","755","848","775","111","561","29","352","797","988","172","139","207","827","525","776","800","65","618","673","182","484","682","666","551","680","76","25","100","537","31","851","224","261","554","690"],"ctGroup":"SharedDatacd60c7b2"}]}],"limits":{"lat":[-32.6,-10.72],"lng":[165.99,187.1]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="col-xs-6">
+<div id="htmlwidget-a7cef56e3016fac34fd2" style="width:100%;height:300px;" class="d3scatter html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a7cef56e3016fac34fd2">{"x":{"data":{"x":[56,475,93,47,137,537,218,555,605,100,219,102,248,593,184,384,195,639,102,615,45,491,617,221,614,513,585,42,139,175,574,50,62,548,104,218,594,64,655,210,57,474,595,664,487,70,284,511,56,622,254,47,162,350,595,71,504,82,538,332,611,86,210,534,49,500,479,595,280,579,582,59,248,69,434,149,603,228,41,618,568,593,49,594,67,47,210,631,506,559,564,431,484,549,553,77,397,270,76,548],"y":[4.9,4.4,4.2,4.8,4.8,4,5,4,4.3,4.6,4.5,4.3,4.7,4.1,4.4,4.2,4,4.6,5,4.9,4.6,4.2,4.8,4.4,4,5.1,4.1,4.4,4.4,4,4.6,4.6,4.9,4.5,4.5,5.3,4.5,5.1,4.1,4.3,4.7,4.6,4.6,4.7,4.4,4.4,4.3,4.8,5,4.3,4.7,4.9,5.1,4.7,4.6,4.9,4.2,4.4,4,5,4.2,4.7,4.2,4.1,4.4,4.5,4.5,4,4.5,4.9,4.5,4.9,4.4,4.8,4.6,4.9,5.2,4.8,5.5,4.1,4.3,4.9,5.1,4.6,4.3,4.9,4.4,5.2,4.3,4.9,4.3,5.4,4.7,4.7,4.6,4.1,4.2,5.1,4.7,4.1],"key":["46","409","557","420","676","26","245","722","582","108","931","391","997","485","768","494","389","460","843","604","532","628","114","365","989","850","39","978","415","299","38","587","501","878","475","318","898","615","687","859","425","810","645","231","730","48","84","616","888","941","258","617","925","209","819","226","274","268","900","638","751","721","140","185","326","755","848","775","111","561","29","352","797","988","172","139","207","827","525","776","800","65","618","673","182","484","682","666","551","680","76","25","100","537","31","851","224","261","554","690"]},"color_spec":{"type":"constant","value":"#333333"},"color":null,"x_label":"depth","y_label":"mag","x_lim":null,"y_lim":null,"group":"SharedDatacd60c7b2"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+
+&lt;div class="footnote"&gt;
+&lt;a href="https://rstudio.github.io/crosstalk/using.html"&gt;Crosstalk: Using Crosstalk&lt;/a&gt;
+&lt;/div&gt;
+
+---
+
+template: serenity
+
+### 7. Multiple formats for communication and dissemination
+
+&lt;br \&gt;
+&lt;img src="www/img/MultipleFormats.png" height="300px"&gt;
+
+&lt;div class="footnote"&gt;
+&lt;a href="http://rmarkdown.rstudio.com/flexdashboard/examples.html"&gt;flexdashboard for R: flexdashboard Examples&lt;/a&gt;
+&lt;/div&gt;
+
+---
+
+template: serenity
+
+### 8. Multiple modes of data import
+
+&lt;br \&gt;
+&lt;img src="www/img/dataimport-datacamp.jpg" height="300px"&gt;
+
+&lt;div class="credit"&gt;
+Image credit: &lt;a href="https://twitter.com/datacamp/status/846256025472847872"&gt;https://twitter.com/datacamp/status/846256025472847872&lt;/a&gt;
+&lt;/div&gt;
+
+---
+
+template: serenity
+
+### 8. Multiple modes of data import
+
+&lt;br \&gt;
+&lt;img src="www/img/re3data.jpg" height="400px"&gt;
+
+&lt;div class="credit"&gt;
+&lt;a href="https://www.re3data.org/"&gt;https://www.re3data.org/&lt;/a&gt;
+&lt;/div&gt;
+
+---
+
+template: serenity
+
+### 9. Integration with built-in learning management systems
+
+&lt;br \&gt;
+&lt;img src="www/img/LMS_MarketShare_20110511_mid.jpg" height="350px"&gt;
+
+&lt;div class="credit"&gt;
+Image credit: &lt;a href="http://mfeldstein.com/state-of-the-us-higher-education-lms-market-2015-edition/"&gt;http://mfeldstein.com/state-of-the-us-higher-education-lms-market-2015-edition/&lt;/a&gt;
+&lt;/div&gt;
+---
+
+template: serenity
+
+### 10. Link computational modeling with analysis of the resulting data
+
+&lt;br \&gt;
+&lt;img src="www/img/LaunchNetLogo.png" height="350px"&gt;
+
+### http://www.netlogoweb.org/launch
+---
+
+# Serenity
+## .subheader[
+Data science in the classroom
+]
+
+.thumbnail-top-right[![](www/img/serenity_final.svg)]
+
+
+1. Highly-accessible as a free, open-source web application
+
+1. User-interface design keeps the focus on the data and the data life cycle
+
+1. Communication and reporting will be streamlined
+
+1. Reports of results will include workflows that can be reproduced or repurposed
+
+1. Workflows will follow best practices in data science
+
+1. Simultaneous exploration of multiple representations of data
+
+1. Multiple formats for communication and dissemination
+
+1. Multiple modes of data import
+
+1. Integration with built-in learning management systems
+
+1. Link computational modeling with analysis of the resulting data
+
+---
+
+class: center
+
+.thumbnail-top-left[![](www/img/qubes_logo_web_200x200_transp.png)]
+.thumbnail-top-right[![](www/img/serenity_final.svg)]
+
+# Thank you!
+
+### Undergraduate Students
+Michael James (*Data Importer*)&lt;br \&gt;
+Natalie Larsen (*Data Dashboarder*)&lt;br \&gt;
+Meg Anderson (*Data Viz Linker*)&lt;br \&gt;
+Sarah Jo McGeady&lt;br \&gt;
+Keely Copperthite (*Data Viz Linker*)&lt;br \&gt;
+
+### Inspired by Radiant
+Vincent Nijs&lt;br \&gt;
+&lt;img src="www/img/nsf-logo.jpg" height="100px" style="float: right; margin-right: -50px; margin-top: -80px"&gt;
+
+.left[
+&lt;div class="footnote" style="bottom:125px"&gt;
+Follow Serenity development at &lt;a href="https://github.com/serenity-r"&gt;https://github.com/serenity-r&lt;/a&gt;&lt;br \&gt;Slides created via the R package &lt;a href="https://github.com/yihui/xaringan"&gt;xaringan&lt;/a&gt;.
+&lt;/div&gt;
+&lt;div class="credit" style="right: 3em"&gt;
+This material is based upon work supported by the National Science Foundation under DBI 1346584, DUE 1446269, DUE 1446258, and DUE 1446284.  Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+&lt;/div&gt;
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
