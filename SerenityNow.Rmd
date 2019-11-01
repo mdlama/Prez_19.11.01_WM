@@ -412,6 +412,26 @@ Data science in the classroom
 
 class: center
 
+# Show-and-tell
+
+.pull-left[
+<a href="">
+<img style="margin-top:200px; border: 2px solid;" src="https://qubeshub.org/groups/birdd/File:birdd.JPG">
+</a>
+**Example teaching module**<br />
+https://mdllama.shinyapps.io/birdd
+]
+.pull-right[
+<a href="https://mdllama.shinyapps.io/serenityviz">
+<img style="margin-top: 50px; border: 2px solid;" src="www/img/serenity_final.svg">
+</a>
+**Load in your own data**<br/>
+https://mdllama.shinyapps.io/serenityviz
+]
+---
+
+class: center
+
 .thumbnail-top-left[![](www/img/qubes_logo_web_200x200_transp.png)]
 .thumbnail-top-right[![](www/img/serenity_final.svg)]
 
