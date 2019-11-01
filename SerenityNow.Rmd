@@ -415,7 +415,7 @@ class: center
 # Show-and-tell
 
 .pull-left[
-<a href="">
+<a href="https://mdllama.shinyapps.io/birdd">
 <img style="margin-top:200px; border: 2px solid;" src="https://qubeshub.org/groups/birdd/File:birdd.JPG">
 </a>
 **Example teaching module**<br />
