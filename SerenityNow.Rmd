@@ -1,6 +1,6 @@
 ---
 title: "Serenity Now!  Creating a bridge to coding and data skills in the undergraduate biology classroom"
-subtitle: ""
+subtitle: "William & Mary Biology Seminar"
 author: "M. Drew LaMar"
 date: "Friday, November 1, 2019, 4:00 pm"
 output:
@@ -421,7 +421,7 @@ class: center
 Michael James (*Data Importer*)<br \>
 Natalie Larsen (*Data Dashboarder*)<br \>
 Meg Anderson (*Data Viz Linker*)<br \>
-Sarah Jo McGeady<br \>
+Sarah Jo McGeady (*Data Workflow*)<br \>
 Keely Copperthite (*Data Viz Linker*)<br \>
 
 ### Inspired by Radiant
@@ -429,10 +429,12 @@ Vincent Nijs<br \>
 <img src="www/img/nsf-logo.jpg" height="100px" style="float: right; margin-right: -50px; margin-top: -80px">
 
 .left[
-<div class="footnote" style="bottom:125px">
-Follow Serenity development at <a href="https://github.com/serenity-r">https://github.com/serenity-r</a><br \>Slides created via the R package <a href="https://github.com/yihui/xaringan">xaringan</a>.
+<div class="footnote" style="bottom:180px">
+Play with Serenity Viz at <a href="https://mdllama.shinyapps.io/serenityviz">https://mdllama.shinyapps.io/serenityviz</a><br \>
+Follow Serenity development at <a href="https://github.com/serenity-r">https://github.com/serenity-r</a>
 </div>
 <div class="credit" style="right: 3em">
-This material is based upon work supported by the National Science Foundation under DBI 1346584, DUE 1446269, DUE 1446258, and DUE 1446284.  Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+This material is based upon work supported by the National Science Foundation under DBI 1346584, DUE 1446269, DUE 1446258, and DUE 1446284.  Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.<br \><br \>
+Slides were created via the R package <a href="https://github.com/yihui/xaringan">xaringan</a> and are available at <a href="https://mdlama.github.io/Prez_19.11.01_WM">https://mdlama.github.io/Prez_19.11.01_WM</a>
 </div>
 ]
